@@ -6,6 +6,7 @@ __pycache__/
 Data/adsb/
 *.nc
 *.csv
+*.parquet
 checkpoints/
 checkpoints_cfm/
 checkpoints_cfm_kevin_dit/
@@ -14,3 +15,10 @@ checkpoints_cfm_rope_ts/
 checkpoints_cfm_newSplit/
 checkpoints_cfm_rope_og_newSplit/
 checkpoints_cfm_rope_ts_newSplit/
+
+# Generated experiment results and prediction visualizations (at any depth)
+ablation_results*/
+ablation_smoke/
+flight_plots*/
+predictions_ep*/
+/predictions.html

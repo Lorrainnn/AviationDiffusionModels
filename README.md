@@ -75,11 +75,7 @@ with learned positions, two **RoPE** variants, and **KEVIN_DiT** (SwiGLU feed-fo
 │   ├── templates/index.html        # Leaflet map front-end
 │   └── requirements.txt
 │
-├── checkpoints_cfm_kevin_dit/      # best_kevin_dit.pt, last_kevin_dit.pt (gitignored)
-├── predictions_ep49_100k/          # pre-rendered DDIM maps (epoch 49, 100k-sample run)
-├── predictions_ep100_100k/         #   … epoch 100, 100k-sample run
-├── predictions_ep100_full/         #   … epoch 100, full-dataset run
-└── predictions.html                # single pre-rendered DDIM map
+└── checkpoints_cfm_kevin_dit/      # generated checkpoints (gitignored)
 ```
 
 ---
@@ -639,8 +635,9 @@ pip install folium
 venv/bin/python eval/visualization.py
 ```
 
-The committed `predictions_ep*/` folders and `predictions.html` are outputs of this
-script; open them directly in a browser.
+Historical prediction maps, ablation outputs and flight plots have been removed
+from this branch to prepare for ATC + ADS-B work. The generation scripts remain;
+generated result directories are gitignored and can be recreated when needed.
 
 ---
 
